@@ -24,13 +24,13 @@ struct ContentView: View {
             }else if(source == "Celcius" && target == "Kelvin"){
                 return Double(val + 274.0)
             }else if(source == "Fahrenheit" && target == "Celcius"){
-                return Double((val-32.0)*5/9)
+                return Double(val - 32) * 5 / 9
             }else if(source == "Fahrenheit" && target == "Kelvin"){
-                return Double(val + 274.0)
+                return Double(val + 459) * 5 / 9
             }else if(source == "Kelvin" && target == "Fahrenheit"){
-                return Double(val + 274.0)
+                return Double(val * 9 / 5) - 459.67
             }else if(source == "Kelvin" && target == "Celcius"){
-                return Double(val + 274.0)
+                return Double(val - 273.15)
             }
             
         }
