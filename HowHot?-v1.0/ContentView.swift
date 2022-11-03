@@ -18,6 +18,7 @@ struct ContentView: View {
     func calculation(source:String, target:String, amount:Double) -> Double{
         let val = inputValue
         if(!source.elementsEqual(target)){
+            //
             if(source == "Celcius" && target == "Fahrenheit"){
                 return Double((val * 1.8) + 32.0)
             }else if(source == "Celcius" && target == "Kelvin"){
